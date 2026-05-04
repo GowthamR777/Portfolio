@@ -12,8 +12,8 @@
         }
     </style>
 </head>
-    
-    <script>
+
+<script>
 function toggleMenu() {
     const nav = document.getElementById("nav-links");
     nav.classList.toggle("active");
@@ -24,13 +24,19 @@ function toggleMenu() {
 <!-- 🔹 Header -->
 <header>
     <nav>
-        <h1>Gowtham R</h1>  
+    <h1>Gowtham R</h1>
+
+    <!-- ☰ Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
     <ul id="nav-links">
         <li><a href="#about"     onclick="toggleMenu()">About</a></li>
         <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact"   onclick="toggleMenu()">Contact</a></li>
     </ul>
-    </nav>
+</nav>
 </header>
 
 
